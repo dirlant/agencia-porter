@@ -62,7 +62,31 @@ function ap_arose_portafolio() {
 	);
 
 	register_post_type( 'portfolio', $args );
+}
+
+if (function_exists('acf_add_options_page')) {
+
+  $parent = acf_add_options_page(array(
+    'page_title' => 'Configuraciones Generales',
+    'menu_title' => 'General',
+    'menu_slug' => 'general',
+    'capability' => 'edit_posts',
+    'position' => false,
+    'icon_url' => false,
+    'redirect' => false
+  ));
+
+  acf_add_options_sub_page(array(
+    'page_title' => 'Configuraciones',
+    'menu_title' => 'Configuraciones',
+    'menu_slug' => 'post-settings',
+    'capability' => 'edit_posts',
+    'parent_slug' => 'edit.php?post_type=portfolio',
+    'position' => false,
+    'icon_url' => false
+  ));
 
 }
+
 
 ?>
