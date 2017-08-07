@@ -27,32 +27,64 @@
 
       <div class="container fluid nopadding">
           <div class="row">
+            <?php
+              $categorias = get_categories(array(
+                'orderby' => 'name',
+                'parent'  => 9
+              ));
 
+            ?>
        <!-- PORTFOLIO ITEMS START -->
         <div class="col-md-12">
 
-               <!-- START PORTFOLIO BUTTONS -->
-              <ul class="pf-filter">
+          <!-- START PORTFOLIO BUTTONS -->
+          <ul class="pf-filter">
+            <li class="btn-lines" data-filter="*">show all</li>
+            <?php foreach ($categorias as $key): ?>
+              <li class="btn-lines" data-filter=".<?php echo $key->slug ?>"><?php echo $key->name ?></li>
+            <?php endforeach; ?>
+          </ul>
+          <!-- END PORTFOLIO BUTTONS -->
 
-              <li class="btn-lines" data-filter="*">show all
 
-            </li>
-              <li class="btn-lines" data-filter=".photo">photography
-                </li>
-
-              <li class="btn-lines" data-filter=".craft">craft
-                </li>
-
-              <li class="btn-lines" data-filter=".web-solution">web solution
-                </li>
-              <li class="btn-lines" data-filter=".branding">branding
-             </li>
-              </ul>
-              <!-- END PORTFOLIO BUTTONS -->
 
              <!-- PORTFOLIO GRID ITEMS -->
-           <div id="masonry-grid-4" class="masonry-grid-4">
-          <div class="isotope">
+          <div id="masonry-grid-4" class="masonry-grid-4">
+            <div class="isotope">
+            <?php
+              $args = array(
+                'post_type' => 'portfolio',
+                'posts_per_page' => -1,
+                'order_by' => 'title',
+                'order' => 'ASC'
+              );
+              $query = new WP_Query($args);
+            ?>
+            <?php while($query->have_posts()): $query->the_post(); ?>
+
+              <div class="grids-item item nopadding <?php echo get_post_field( 'post_name', get_post() ); ?> craft">
+                   <?php the_post_thumbnail()?>
+                       <!-- Portfolio Hover -->
+                   <div class="portfolio-hover">
+                       <div class="action-btn">
+                           <div class="port-title"><?php echo get_post_field( 'post_title', get_post() ); ?></div>
+                          <a class="port-subt" href="portfolio-project.html"><?php echo get_post_field( 'post_name', get_post() ); ?></a>
+                       </div>
+                   </div>
+                   <!-- End Portfolio Hover -->
+              </div>
+
+              <!--
+              <div class="columnas1-3">
+                <?php the_post_thumbnail()?>
+
+                <div class="texto-especialidad">
+                  <h4><?php the_title(); ?> </h4>
+                  <?php the_content(); ?>
+                </div>
+              </div>
+            -->
+            <?php endwhile; wp_reset_postdata(); ?>
            <div class="grids-item item nopadding photo craft">
                 <img class="m-grid-item-2 masonry-pad"  src="<?php echo get_template_directory_uri()?>/images/portfolio/masonry/10.jpg" alt="portfolio">
                     <!-- Portfolio Hover -->
@@ -169,7 +201,7 @@
                 </div>
                 <!-- End Portfolio Hover -->
            </div>
-         </div> <!-- END PORTFOLIO GRID ITEMS -->
+          </div> <!-- END PORTFOLIO GRID ITEMS -->
 
           </div>
 
