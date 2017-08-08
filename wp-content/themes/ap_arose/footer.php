@@ -8,6 +8,7 @@
                 <p>arose INC.</p>
             </div>
 
+            
             <div class="col-md-3 footer-column">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item"><a href="#about" class="footer__nav-link">About</a>

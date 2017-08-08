@@ -57,7 +57,7 @@ function ap_arose_portafolio() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 6,
-		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+		'supports'           => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'post-formats', 'page-attributes' ),
     'taxonomies'          => array( 'category' ),
 	);
 
@@ -74,16 +74,6 @@ if (function_exists('acf_add_options_page')) {
     'position' => false,
     'icon_url' => false,
     'redirect' => false
-  ));
-
-  acf_add_options_sub_page(array(
-    'page_title' => 'Configuraciones',
-    'menu_title' => 'Configuraciones',
-    'menu_slug' => 'post-settings',
-    'capability' => 'edit_posts',
-    'parent_slug' => 'edit.php?post_type=portfolio',
-    'position' => false,
-    'icon_url' => false
   ));
 
 }

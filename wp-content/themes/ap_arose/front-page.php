@@ -30,7 +30,7 @@
             <?php
               $categorias = get_categories(array(
                 'orderby' => 'name',
-                'parent'  => 9
+                'parent'  => 0
               ));
 
             ?>
@@ -76,7 +76,7 @@
                    <div class="portfolio-hover">
                        <div class="action-btn">
                            <div class="port-title"><?php echo get_post_field( 'post_title', get_post() ); ?></div>
-                          <a class="port-subt" href="portfolio-project.html"><?php echo get_post_field( 'post_title', get_post() ); ?></a>
+                          <a class="port-subt" href="<?php echo get_post_field( 'guid', get_post() ); ?>"><?php echo get_post_field( 'post_title', get_post() ); ?></a>
                        </div>
                    </div>
                    <!-- End Portfolio Hover -->
