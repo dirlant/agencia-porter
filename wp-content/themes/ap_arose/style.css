@@ -10,3 +10,9 @@ License URI: http://www.gnu.org/license/gpl-2.0.html
 Tags: Publicidad, VTL, Comercial, Gráfica
 Text Domain: agenciaporter
 */
+
+.carousel-inner, .carousel{
+  width: 700px;
+  height: 350px;
+  margin: 20px auto;
+}

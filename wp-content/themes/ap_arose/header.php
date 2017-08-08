@@ -2,67 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Responsive Bootstrap Creative HTML Template">
-    <meta name="keywords" content="arose, Bootstrap, creative Template, minimal, agency, corporate">
-    <meta name="author" content="rashed amin">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="Responsive Bootstrap Creative HTML Template">
+  <meta name="keywords" content="arose, Bootstrap, creative Template, minimal, agency, corporate">
+  <meta name="author" content="rashed amin">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- SITE TITLE -->
-    <title>Agencia Porter</title>
+  <!-- SITE TITLE -->
+  <title>Agencia Porter</title>
 
-    <!-- =========================
-  FAV AND TOUCH ICONS (RETINA)
-  ============================== -->
-    <link rel="icon" href="<?php echo get_template_directory_uri()?>/images/favicon.ico">
-    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri()?>/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri()?>/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri()?>/images/apple-touch-icon-114x114.png">
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/images/favicon-16x16.png" sizes="16x16" />
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+  <!-- =========================
+FAV AND TOUCH ICONS (RETINA)
+============================== -->
+  <link rel="icon" href="<?php echo get_template_directory_uri()?>/images/favicon.ico">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri()?>/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri()?>/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri()?>/images/apple-touch-icon-114x114.png">
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri()?>/images/favicon-16x16.png" sizes="16x16" />
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
 
-    <!-- =========================
-  STYLESHEETS
-  ============================== -->
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
+  <!-- =========================
+STYLESHEETS
+============================== -->
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
 
-    <!-- FONT ICONS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/elegant-icons/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/et-line-font/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/fonts/font-awesome.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/ion-icon/ionicons.min.css">
-    <!-- <link rel="stylesheet" href="assets/app-icons/styles.css"> -->
-    <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-
-
-
-    <!-- CAROUSEL AND LIGHTBOX -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.theme.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/nivo-lightbox.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/nivo_themes/default/default.css">
-
-    <!-- ANIMATIONS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/animate.min.css">
-    <link href="<?php echo get_template_directory_uri()?>/css/animated-headline.css" rel="stylesheet">
-
-    <!-- MAIN STYLESHEETS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/styles.css">
-
-    <!-- COLORS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/color-schemes/charcoal-black.css">
+  <!-- FONT ICONS -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/elegant-icons/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/et-line-font/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/fonts/font-awesome.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/ion-icon/ionicons.min.css">
+  <!-- <link rel="stylesheet" href="assets/app-icons/styles.css"> -->
+  <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
 
-    <!-- RESPONSIVE FIXES -->
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/responsive.css"> -->
 
-    <!--[if lt IE 9]>
+  <!-- CAROUSEL AND LIGHTBOX -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.theme.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.carousel.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/nivo-lightbox.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/nivo_themes/default/default.css">
+
+  <!-- ANIMATIONS -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/animate.min.css">
+  <link href="<?php echo get_template_directory_uri()?>/css/animated-headline.css" rel="stylesheet">
+
+  <!-- MAIN STYLESHEETS -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/styles.css">
+
+  <!-- COLORS -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/color-schemes/charcoal-black.css">
+
+
+  <!-- RESPONSIVE FIXES -->
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/responsive.css"> -->
+
+  <!--[if lt IE 9]>
   <script src="<?php echo get_template_directory_uri()?>/js/html5shiv.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/respond.min.js"></script>
   <![endif]-->
 
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
   <?php wp_head(); ?>
 </head>
 
@@ -89,28 +91,24 @@ HEADER
 
   <header class="header" id="home">
 
-     <a class="navbar-brand" href="index.html"><img src="<?php echo get_template_directory_uri()?>/images/logo.png" alt="logo" />
-                      <div class="logo-title">porter</div>
-        </a>
-      <div class="nav-trigger" role="button" title="sweet hamburger">
+    <a class="navbar-brand" href="<?php echo get_site_url()?>">
+      <img src="<?php echo get_template_directory_uri()?>/images/logo.png" alt="logo" />
+      <div class="logo-title">porter</div>
+    </a>
+    <div class="nav-trigger" role="button" title="sweet hamburger">
       <div class="hamburger">
         <div class="icon"></div>
       </div>
     </div>
 
     <?php
-
       $args = array(
         'theme_location' => 'menu-principal',
         'container' => 'div',
         'container_id' => 'top-nav',
         'container_class' => 'nav navbar-nav navbar-right main-navigation'
       );
-
       //wp_nav_menu( $args );
-
-
-
     ?>
 
     <?php
