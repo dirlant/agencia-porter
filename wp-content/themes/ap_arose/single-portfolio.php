@@ -52,15 +52,16 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                <!--/ End Portfolio details text -->
                <nav class="article-nav row">
-                  <a href="#ignore-click" class="article-nav-link col-sm-6">
+                  <a href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>" class="article-nav-link col-sm-6">
                      <i class="arrow_carrot-2left"></i>
-                     <p>previous
-                        <br> project
+                     <p>anterior
+                        <br> proyecto
                      </p>
                   </a>
-                  <a href="#ignore-click" class="article-nav-link col-sm-6">
-                     <p>next
-                        <br> project
+
+                  <a href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>" class="article-nav-link col-sm-6">
+                     <p>siguiente
+                        <br> proyecto
                      </p>
                      <i class=" arrow_carrot-2right"></i>
                   </a>
