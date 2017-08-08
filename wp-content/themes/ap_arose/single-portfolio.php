@@ -39,14 +39,14 @@
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <?php for ($i=0; $i <= count($sliders); $i++): ?>
+                    <?php for ($i=0; $i < count($sliders); $i++): ?>
                     <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i ?>"></li>
                     <?php endfor; ?>
                   </ol>
 
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner" role="listbox">
-                    <?php for ($i=0; $i <= count($sliders); $i++): ?>
+                    <?php for ($i=0; $i < count($sliders); $i++): ?>
                       <div class="item">
                         <img src="<?php echo $sliders[$i]['url']?>" alt="<?php echo $sliders[$i]['title']?>">
                         <div class="carousel-caption">

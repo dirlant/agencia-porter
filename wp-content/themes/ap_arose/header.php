@@ -92,8 +92,7 @@ HEADER
   <header class="header" id="home">
 
     <a class="navbar-brand" href="<?php echo get_site_url()?>">
-      <img src="<?php echo get_template_directory_uri()?>/images/logo.png" alt="logo" />
-      <div class="logo-title">porter</div>
+      <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" />
     </a>
     <div class="nav-trigger" role="button" title="sweet hamburger">
       <div class="hamburger">
