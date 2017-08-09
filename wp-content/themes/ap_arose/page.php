@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+    <h1>page.php</h1>
     <?php while (have_posts()): the_post(); ?>
       <!-- banner-bottom -->
       <section id="about" class="banner">
@@ -69,15 +70,15 @@
             <div class="isotope">
               <?php while($query->have_posts()): $query->the_post(); ?>
                 <div class="grids-item item nopadding <?php echo implode(wp_get_post_categories(get_post_field( 'ID', get_post()))); ?> craft">
-                     <?php the_post_thumbnail()?>
-                         <!-- Portfolio Hover -->
-                     <div class="portfolio-hover">
-                         <div class="action-btn">
-                             <div class="port-title"><?php echo get_post_field( 'post_title', get_post() ); ?></div>
-                            <a class="port-subt" href="<?php echo get_post_field( 'guid', get_post() ); ?>"><?php echo get_post_field( 'post_title', get_post() ); ?></a>
-                         </div>
-                     </div>
-                     <!-- End Portfolio Hover -->
+                    <?php the_post_thumbnail()?>
+                    <!-- Portfolio Hover -->
+                    <div class="portfolio-hover">
+                      <div class="action-btn">
+                          <div class="port-title"><?php echo get_post_field( 'post_title', get_post() ); ?></div>
+                          <a class="port-subt" href="<?php echo get_post_field( 'guid', get_post() ); ?>"><?php echo get_post_field( 'post_title', get_post() ); ?></a>
+                      </div>
+                    </div>
+                    <!-- End Portfolio Hover -->
                 </div>
                   <!--
                   <div class="columnas1-3">

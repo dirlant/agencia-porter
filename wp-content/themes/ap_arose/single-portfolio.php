@@ -1,7 +1,5 @@
-<?php
-
-?>
 <?php get_header(); ?>
+    <h1>sigle-portfolio.php</h1>
     <?php while (have_posts()): the_post(); ?>
       <!-- banner-bottom -->
       <div id="about" class="banner-bottom">
@@ -32,9 +30,6 @@
 
                 <!-- Obteniendo los slider de lso trabajos -->
                 <?php $sliders = get_field('sliders') ?>
-
-
-
 
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->

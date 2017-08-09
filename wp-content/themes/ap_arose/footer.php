@@ -9,13 +9,13 @@
         <div class="col-xs-6 col-sm-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
       </div>
       <div class="row footer-content">
-        <div class="col-md-6 col-md-offset-3 copy">
+        <div class="col-md-6 col-md-offset-3">
           <a href="<?php echo get_site_url()?>">
             <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" />
           </a>
         </div>
-        <div class="col-md-6 col-md-offset-3 footer-column" align="center">
-          <p>arose INC.</p>
+        <div class="col-md-6 col-md-offset-3" >
+          <p style="color:#a7a6a4;">Copyright © <?php echo date('Y') ?> Porter Advertising, Todos los Derechos Reservados.</p>
         </div>
       </div>
 

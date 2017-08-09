@@ -43,15 +43,11 @@
         <!-- START PORTFOLIO BUTTONS -->
         <ul class="pf-filter">
           <?php foreach ($categorias as $key): ?>
-            <a href="#"><li class="btn-lines" data-filter=".<?php echo $key->cat_ID ?>"><?php echo $key->name ?></li></a>
+            <a href="<?php echo get_category_link($key->cat_ID) ?>"><li class="btn-lines"><?php echo $key->name ?> </li></a>
           <?php endforeach; ?>
         </ul>
 
         <ul class="clients plus-box grid-5 ">
-          <li>
-            <a href="#"><img src="https://placeholdit.co//i/170x100?&bg=fff&fc=000%22" alt="Clients">
-            </a>
-          </li>
           <li>
               <a href="#"><img src="https://placeholdit.co//i/170x100?&bg=fff&fc=000%22" alt="Clients">
             </a>

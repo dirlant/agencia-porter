@@ -11,7 +11,7 @@ Tags: Publicidad, VTL, Comercial, Gráfica
 Text Domain: agenciaporter
 */
 
-html, body, header, footer, .footer-section{
+html, body, header, footer, .banner-bottom, .footer-section{
   background-color: #000000;
   color: #ffffff;
 }
@@ -74,4 +74,24 @@ html, body, header, footer, .footer-section{
 .footer-2 .col-md-6{
   text-align: center;
   padding: 0;
+}
+
+/* template category.php */
+
+/* seccion categorias */
+.grid-item-gut{
+  width: 100%;
+}
+/* seccion mensaje de la categoria */
+.hey-right p{
+  color: #c2c2c2;
+}
+.hey-right-t{
+  color: #ffffff;
+}
+.banner-bottom{
+  padding-top: 0px;
+}
+.isotope{
+  margin: 0px 35px;
 }

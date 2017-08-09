@@ -25,6 +25,6 @@
 
     <?php the_content() ?>
 
-  <?php endwhile; ?>
+  <?php endwhile; wp_reset_postdata();?>
 
 <?php get_footer(); ?>
