@@ -17,13 +17,9 @@
         <!-- </div> -->
       </div>
   </section>
-  </header>
-  <!-- /END HEADER -->
 
-   <!-- =========================
-       PORTFOLIO
-  ============================== -->
-  <section class="xen-pad" id="portfolio">
+
+  <section class="xen-pad">
     <a href="<?php echo get_site_url() ?>"><img src="https://placeholdit.co//i/970x450?&bg=fff&fc=000%22" alt=""></a>
 
     <div class="container fluid nopadding">
@@ -46,25 +42,7 @@
             <a href="<?php echo get_category_link($key->cat_ID) ?>"><li class="btn-lines"><?php echo $key->name ?> </li></a>
           <?php endforeach; ?>
         </ul>
-
-        <ul class="clients plus-box grid-5 ">
-          <li>
-              <a href="#"><img src="https://placeholdit.co//i/170x100?&bg=fff&fc=000%22" alt="Clients">
-            </a>
-          </li>
-          <li>
-            <a href="#"><img src="https://placeholdit.co//i/170x100?&bg=fff&fc=000%22" alt="Clients">
-            </a>
-          </li>
-          <li>
-            <a href="#"><img src="https://placeholdit.co//i/170x100?&bg=fff&fc=000%22" alt="Clients">
-            </a>
-          </li>
-          <li>
-            <a href="#"><img src="https://placeholdit.co//i/170x100?&bg=fff&fc=000%22" alt="Clients">
-            </a>
-          </li>
-        </ul>
+        
       </div>
     </div>
   </section>

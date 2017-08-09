@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-    </header>
+
 
 
     <section id="portfolio-top" class="portfolio-project pad-top-60">

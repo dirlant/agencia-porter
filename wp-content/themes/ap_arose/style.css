@@ -22,12 +22,6 @@ html, body, header, footer, .banner-bottom, .footer-section{
   padding-top: 0px;
 }
 
-/* seccion carousel de proyectos internos */
-.carousel-inner, .carousel{
-  width: 700px;
-  height: 350px;
-  margin: 20px auto;
-}
 
 /* seccion del texto animado */
 .cd-headline{
@@ -65,6 +59,12 @@ html, body, header, footer, .banner-bottom, .footer-section{
 .clients.plus-box li:before{
   border-right: 1px solid #2B2B2B;
 }
+.clients{
+  margin-top: 30px;
+}
+.clients.plus-box li:after, .clients.plus-box li:before, .clients.angle-box li:after, .clients.angle-box li:before{
+  border-bottom: none;
+}
 
 /* seccion footer */
 .contacto div{
@@ -94,4 +94,28 @@ html, body, header, footer, .banner-bottom, .footer-section{
 }
 .isotope{
   margin: 0px 35px;
+}
+
+/* seccion de clientes */
+.slider {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev:before {
+  font-family: FontAwesome;
+  content: "\f053";
+  color: #fff;
+}
+.slick-next:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  color: #fff;
 }

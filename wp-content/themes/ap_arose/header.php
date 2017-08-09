@@ -33,8 +33,8 @@ STYLESHEETS
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/et-line-font/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/fonts/font-awesome.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/ion-icon/ionicons.min.css">
-  <!-- <link rel="stylesheet" href="assets/app-icons/styles.css"> -->
-  <!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/app-icons/styles.css">
+  <!--[if lte IE 7]><script src="<?php echo get_template_directory_uri()?>/js/lte-ie7.js"></script><![endif]-->
 
 
 
@@ -63,6 +63,9 @@ STYLESHEETS
   <script src="<?php echo get_template_directory_uri()?>/js/respond.min.js"></script>
   <![endif]-->
 
+  <!-- Libreria slick -->
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick-theme.css">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
   <?php wp_head(); ?>
@@ -85,11 +88,11 @@ PRE LOADER
           </div>
       </div>
   </div>
-  <!-- =========================
-HEADER
-============================== -->
+    <!-- =========================
+  HEADER
+  ============================== -->
 
-  <header class="header" id="home">
+  <header class="header">
 
     <a class="navbar-brand" href="<?php echo get_site_url()?>">
       <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" />
@@ -158,3 +161,4 @@ HEADER
       </ul>
     </div>
   -->
+  </header>
