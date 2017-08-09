@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
   <!-- banner-bottom -->
@@ -42,7 +43,7 @@
             <a href="<?php echo get_category_link($key->cat_ID) ?>"><li class="btn-lines"><?php echo $key->name ?> </li></a>
           <?php endforeach; ?>
         </ul>
-        
+
       </div>
     </div>
   </section>

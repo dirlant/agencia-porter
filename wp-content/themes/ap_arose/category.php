@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php $category = get_queried_object(); ?>
-<h1>category.php</h1>
+
+  <h1>category.php</h1>
 
   <section id="about" class="banner">
       <div class="container">
@@ -19,19 +20,19 @@
       </div>
   </section>
   <div id="about" class="banner-bottom">
-        <div class="container">
-            <div class="hey">
+    <div class="container">
+        <div class="hey">
 
-                <div class="clearfix"> </div>
-                <div class="hey-right">
-                    <div class="hey-right-t"><?php echo $category->cat_name ?><span style="color: red">.</span></div>
-                    <p><?php echo category_description($category->term_id) ?>
+            <div class="clearfix"> </div>
+            <div class="hey-right">
+                <div class="hey-right-t"><?php echo $category->cat_name ?><span style="color: red">.</span></div>
+                <p><?php echo category_description($category->term_id) ?>
 
-                </div>
             </div>
         </div>
     </div>
-  </header>
+  </div>
+
 
   <?php
     $args = array(

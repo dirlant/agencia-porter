@@ -99,7 +99,7 @@ PRE LOADER
     </a>
     <div class="nav-trigger" role="button" title="sweet hamburger">
       <div class="hamburger">
-        <div class="icon"></div>
+        <div class="icon" style="color:#fff;"></div>
       </div>
     </div>
 

@@ -22,6 +22,10 @@ html, body, header, footer, .banner-bottom, .footer-section{
   padding-top: 0px;
 }
 
+/* menu */
+.hamburger::before, .hamburger::after, .hamburger .icon{
+  background: #ffffff;
+}
 
 /* seccion del texto animado */
 .cd-headline{
@@ -55,17 +59,6 @@ html, body, header, footer, .banner-bottom, .footer-section{
   content: '';
 }
 
-/* seccion clientes */
-.clients.plus-box li:before{
-  border-right: 1px solid #2B2B2B;
-}
-.clients{
-  margin-top: 30px;
-}
-.clients.plus-box li:after, .clients.plus-box li:before, .clients.angle-box li:after, .clients.angle-box li:before{
-  border-bottom: none;
-}
-
 /* seccion footer */
 .contacto div{
   margin: 0;
@@ -93,7 +86,7 @@ html, body, header, footer, .banner-bottom, .footer-section{
   padding-top: 0px;
 }
 .isotope{
-  margin: 0px 35px;
+  margin: 0px 35px 50px;
 }
 
 /* seccion de clientes */
@@ -118,4 +111,26 @@ html, body, header, footer, .banner-bottom, .footer-section{
   font-family: FontAwesome;
   content: "\f054";
   color: #fff;
+}
+
+/*
+* template sigle-portfolio.php
+*/
+
+/* slider de trabajos */
+.trabajos-interno{
+  width: 945px;
+  height: 400px;
+  margin: 0 auto;
+}
+.article-nav-link{
+  color: #f91e10;
+}
+.article-nav-link:hover,
+.article-nav-link:focus{
+  color: #ffffff;
+}
+.article-nav{
+  border-top: none;
+  border-bottom: none;
 }

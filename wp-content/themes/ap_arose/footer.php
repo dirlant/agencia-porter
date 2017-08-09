@@ -27,10 +27,11 @@
       </div>
     </div>
 
-    <!-- SCROLL UP -->
+    <!-- SCROLL UP
     <div class="scroll-up">
       <a class="theme-color-bg" href="#home"><i class="fa fa-angle-up"></i></a>
     </div>
+    -->
 
   </footer>
   <!-- /END FOOTER -->

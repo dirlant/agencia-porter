@@ -20,7 +20,6 @@
           <!-- </div> -->
         </div>
       </section>
-    </header>
     <!-- /END HEADER -->
 
     <?php the_content() ?>
