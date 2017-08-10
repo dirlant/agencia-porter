@@ -29,7 +29,7 @@ html, body, header, footer, .banner-bottom, .footer-section{
 
 /* seccion del texto animado */
 .cd-headline{
-  padding-top: 8%;
+  padding-top: 4%;
   padding-bottom: 1%;
 }
 .cd-headline.clip span{
@@ -133,4 +133,14 @@ html, body, header, footer, .banner-bottom, .footer-section{
 .article-nav{
   border-top: none;
   border-bottom: none;
+}
+
+/*
+* template page-reel.php
+*/
+.reel{
+  background: white;
+  width: 920px;
+  height: 400px;
+  margin: 100px;
 }

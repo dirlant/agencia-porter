@@ -1,16 +1,18 @@
-  <section class="regular slider">
-    <?php $sliders = get_field('sliders_clientes', 'option') ?>
-    <?php for ($i=0; $i < count($sliders); $i++): ?>
-      <div>
-        <img src="<?php echo $sliders[$i]['url']?>">
-      </div>
-    <?php endfor; ?>
-  </section>
+
 
   <!-- =========================
               FOOTER
    ============================== -->
   <footer class="footer-section footer-2">
+    <div class="regular slider">
+      <?php $sliders = get_field('sliders_clientes', 'option') ?>
+      <?php for ($i=0; $i < count($sliders); $i++): ?>
+        <div>
+          <img src="<?php echo $sliders[$i]['url']?>">
+        </div>
+      <?php endfor; ?>
+    </div>
+
     <div class="row show-grid contacto">
       <div class="col-xs-6 col-sm-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
       <div class="col-xs-6 col-sm-4"><img src="https://placeholdit.co//i/500x500?&bg=ccc&fc=000%22" width="100%"></div>

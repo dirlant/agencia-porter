@@ -63,9 +63,11 @@ STYLESHEETS
   <script src="<?php echo get_template_directory_uri()?>/js/respond.min.js"></script>
   <![endif]-->
 
-  <!-- Libreria slick -->
+  <!-- Librerias integradas -->
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/main.css">
+
   <!-- Estilos propios -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
   <?php wp_head(); ?>
