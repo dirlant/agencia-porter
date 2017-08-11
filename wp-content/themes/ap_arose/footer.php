@@ -13,10 +13,10 @@
       <?php endfor; ?>
     </div>
 
-    <div class="row show-grid contacto">
-      <div class="col-xs-6 col-sm-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
-      <div class="col-xs-6 col-sm-4"><img src="https://placeholdit.co//i/500x500?&bg=ccc&fc=000%22" width="100%"></div>
-      <div class="col-xs-6 col-sm-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
+    <div class="row contacto">
+      <div class="col-xs-12 col-md-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
+      <div class="col-xs-12 col-md-4"><img src="https://placeholdit.co//i/500x500?&bg=ccc&fc=000%22" width="100%"></div>
+      <div class="col-xs-12 col-md-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
     </div>
     <div class="row footer-content">
       <div class="col-md-6 col-md-offset-3">
@@ -66,17 +66,11 @@
   <script src="<?php echo get_template_directory_uri()?>/js/menu.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/custom.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/slick.js" type="text/javascript" charset="utf-8"></script>
-</body>
+  <script src="<?php echo get_template_directory_uri()?>/js/scrolloverflow.js" type="text/javascript" charset="utf-8"></script>
+  <script src="<?php echo get_template_directory_uri()?>/js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
 
-<script type="text/javascript">
-  $(document).on('ready', function() {
-    $(".regular").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1
-    });
-  });
-</script>
+  <!-- Codigo JQuery propio -->
+  <script src="<?php echo get_template_directory_uri()?>/js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
 
 </html>

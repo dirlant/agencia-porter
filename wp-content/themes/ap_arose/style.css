@@ -26,10 +26,13 @@ html, body, header, footer, .banner-bottom, .footer-section{
 .hamburger::before, .hamburger::after, .hamburger .icon{
   background: #ffffff;
 }
-
+#top-nav ul {
+  position: relative;
+  z-index: 9999;
+}
 /* seccion del texto animado */
 .cd-headline{
-  padding-top: 4%;
+  padding-top: 2%;
   padding-bottom: 1%;
 }
 .cd-headline.clip span{
@@ -37,6 +40,9 @@ html, body, header, footer, .banner-bottom, .footer-section{
 }
 .cd-headline h1{
   color: #fe2f01;
+}
+.xen-pad{
+  margin-top: 100px;
 }
 
 /* seccion menu de categorias */

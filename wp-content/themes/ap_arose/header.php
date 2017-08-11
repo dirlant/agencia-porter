@@ -67,6 +67,8 @@ STYLESHEETS
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/main.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/examples.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/jquery.fullPage.css">
 
   <!-- Estilos propios -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
@@ -116,15 +118,6 @@ PRE LOADER
     ?>
 
     <?php
-    /*
-    wp_nav_menu(array(
-      'theme_location' => 'menu-principal',
-      'container' => 'div',
-      'container_id' => 'top-nav',
-      'container_class' => 'nav navbar-nav navbar-right main-navigation',
-      'walker' => new CSS_Menu_Walker()
-    ));
-    */
 
     $args = array(
       'theme_location' => 'menu-principal',
@@ -134,33 +127,9 @@ PRE LOADER
       'container_class' => 'nav navbar-nav navbar-right main-navigation',
       'walker'  => new BootstrapNavMenuWalker()
       );
-    wp_nav_menu($args);
+
+      wp_nav_menu($args);
 
     ?>
-    <!--
-     <div id="top-nav" class="hidden-xs ">
-      <ul class="nav navbar-nav navbar-right main-navigation">
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
-            <ul class="dropdown-menu">
-              <li><a href="about-us.html">About us</a></li>
-              <li><a href="about-me.html">About me</a></li>
-            </ul>
-          </li>
-            <li><a href="service.html">services</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-            <ul class="dropdown-menu">
-              <li><a href="index-2.html">Masonry 3 col</a></li>
-              <li><a href="index.html">Grid 4 col</a></li>
-              <li><a href="portfolio-5-col-grid.html">Grid 5 col</a></li>
-            </ul>
-          </li>
 
-        <li><a href="blog-list.html">blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  -->
   </header>
