@@ -16,6 +16,11 @@ html, body, header, footer, .banner-bottom, .footer-section{
   color: #ffffff;
 }
 
+.border-left{ border-left: 1px solid #d0d0d0; }
+.border-right{ border-right: 1px solid #d0d0d0; }
+.border-bottom{ border-bottom: 1px solid #d0d0d0; }
+.border-top{ border-top: 1px solid #d0d0d0; }
+
 /* seccion del logo */
 .navbar-brand {
   padding-left: 35px;

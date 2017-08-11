@@ -3,6 +3,9 @@
 // Archivos requeridos * esta clase imprime el menu dropdown
 require_once('wp_bootstrap_navwalker.php');
 
+show_admin_bar(true);
+
+
 // Menus del tema
 add_action( 'init', 'ap_arose_menus' );
 

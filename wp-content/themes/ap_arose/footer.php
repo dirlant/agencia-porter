@@ -4,20 +4,6 @@
               FOOTER
    ============================== -->
   <footer class="footer-section footer-2">
-    <div class="regular slider">
-      <?php $sliders = get_field('sliders_clientes', 'option') ?>
-      <?php for ($i=0; $i < count($sliders); $i++): ?>
-        <div>
-          <img src="<?php echo $sliders[$i]['url']?>">
-        </div>
-      <?php endfor; ?>
-    </div>
-
-    <div class="row contacto">
-      <div class="col-xs-12 col-md-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
-      <div class="col-xs-12 col-md-4"><img src="https://placeholdit.co//i/500x500?&bg=ccc&fc=000%22" width="100%"></div>
-      <div class="col-xs-12 col-md-4"><img src="https://placeholdit.co//i/500x500?&bg=fff&fc=000%22" width="100%"></div>
-    </div>
     <div class="row footer-content">
       <div class="col-md-6 col-md-offset-3">
         <a href="<?php echo get_site_url()?>">
@@ -65,7 +51,7 @@
   <script src="<?php echo get_template_directory_uri()?>/js/pathLoader.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/menu.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/custom.js"></script>
-  <script src="<?php echo get_template_directory_uri()?>/js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <!--<script src="<?php echo get_template_directory_uri()?>/js/slick.js" type="text/javascript" charset="utf-8"></script>-->
   <script src="<?php echo get_template_directory_uri()?>/js/scrolloverflow.js" type="text/javascript" charset="utf-8"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
 

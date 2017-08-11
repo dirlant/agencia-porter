@@ -63,11 +63,12 @@ STYLESHEETS
   <script src="<?php echo get_template_directory_uri()?>/js/respond.min.js"></script>
   <![endif]-->
 
-  <!-- Librerias integradas -->
+  <!-- Librerias integradas
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/main.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/examples.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/main.css">
+-->
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/jquery.fullPage.css">
 
   <!-- Estilos propios -->
@@ -131,5 +132,4 @@ PRE LOADER
       wp_nav_menu($args);
 
     ?>
-
   </header>
