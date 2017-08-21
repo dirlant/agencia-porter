@@ -67,8 +67,8 @@ STYLESHEETS
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/examples.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/main.css">
 -->
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/main.css">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/jquery.fullPage.css">
 
   <!-- Estilos propios -->
@@ -99,8 +99,9 @@ PRE LOADER
 
   <header class="header">
 
-    <a class="navbar-brand" href="<?php echo get_site_url()?>">
-      <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" />
+    <?php //$margin = (is_front_page()) ? '' : 'margin-top: -55px;'  ?>
+    <a class="navbar-brand" href="<?php echo get_site_url()?>" >
+      <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" style="<?php echo $margin ?>"/>
     </a>
     <div class="nav-trigger" role="button" title="sweet hamburger">
       <div class="hamburger">

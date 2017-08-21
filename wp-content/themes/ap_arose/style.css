@@ -31,10 +31,42 @@ html, body, header, footer, .banner-bottom, .footer-section{
 .hamburger::before, .hamburger::after, .hamburger .icon{
   background: #ffffff;
 }
-#top-nav ul {
+.nav-trigger{
+  height: 46px;
+  top: 10px;
+  right: 3.5%;
+}
+.navbar-brand img{
+  width: 170px;
+  margin-left: 3.5%;
   position: relative;
   z-index: 9999;
 }
+
+#top-nav{
+  top: 0px;
+}
+#top-nav ul {
+  padding: 0px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Sección de contacto */
+@media (max-width: 768px) {
+  .img-contacto{
+    height: 115px;
+  }
+  .logo-footer{
+    margin-top: 80px;
+  }
+  .clientes{
+    display: none;
+  }
+}
+
+
 /* seccion del texto animado */
 .cd-headline{
   padding-top: 2%;
@@ -78,6 +110,16 @@ html, body, header, footer, .banner-bottom, .footer-section{
 .footer-2 .col-md-6{
   text-align: center;
   padding: 0;
+}
+.footer-content{
+  margin: 0px;
+  margin-top: 5%;
+}
+.footer-content img{
+  width: 170px;
+}
+.clientes{
+  margin-bottom: 10%;
 }
 
 /* template category.php */

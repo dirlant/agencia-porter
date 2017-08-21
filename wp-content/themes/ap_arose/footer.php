@@ -3,25 +3,73 @@
   <!-- =========================
               FOOTER
    ============================== -->
-  <footer class="footer-section footer-2">
-    <div class="row footer-content">
-      <div class="col-md-6 col-md-offset-3">
-        <a href="<?php echo get_site_url()?>">
-          <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" />
-        </a>
-      </div>
-      <div class="col-md-6 col-md-offset-3" >
-        <p style="color:#a7a6a4;">Copyright © <?php echo date('Y') ?> Porter Advertising, Todos los Derechos Reservados.</p>
-      </div>
-    </div>
 
-    <!-- SCROLL UP
-    <div class="scroll-up">
-      <a class="theme-color-bg" href="#home"><i class="fa fa-angle-up"></i></a>
-    </div>
-    -->
+    <footer class="footer-section footer-2 ">
+      <div class="row clientes" >
+        <div class="col-md-2">
+          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
 
-  </footer>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
+          <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
+        </div>
+        <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
+          <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
+        </div>
+        <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
+          <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
+        </div>
+
+      </div>
+
+      <div class="row footer-content">
+        <div class="col-md-6 col-md-offset-3">
+          <a href="<?php echo get_site_url()?>">
+            <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" class="logo-footer" />
+          </a>
+        </div>
+        <div class="col-md-6 col-md-offset-3" >
+          <p style="color:#a7a6a4;">Copyright © <?php echo date('Y') ?> Porter Advertising, Todos los Derechos Reservados.</p>
+        </div>
+      </div>
+
+      <!-- SCROLL UP
+      <div class="scroll-up">
+        <a class="theme-color-bg" href="#home"><i class="fa fa-angle-up"></i></a>
+      </div>
+      -->
+
+    </footer>
+
   <!-- /END FOOTER -->
 
   <!-- =========================
@@ -32,9 +80,11 @@
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/modernizr.custom.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/bootstrap.min.js"></script>
+  <!--
   <script src="<?php echo get_template_directory_uri()?>/js/smoothscroll.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/jquery.scrollTo.min.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/jquery.localScroll.min.js"></script>
+  -->
   <script src="<?php echo get_template_directory_uri()?>/js/owl.carousel.min.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/isotope.pkgd.min.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/waypoints.min.js"></script>
