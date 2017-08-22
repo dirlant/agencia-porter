@@ -99,7 +99,7 @@ PRE LOADER
 
   <header class="header">
 
-    <?php //$margin = (is_front_page()) ? '' : 'margin-top: -55px;'  ?>
+    <?php $margin = (is_front_page()) ? '' : 'margin-top: -55px;'  ?>
     <a class="navbar-brand" href="<?php echo get_site_url()?>" >
       <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" style="<?php echo $margin ?>"/>
     </a>
@@ -131,6 +131,5 @@ PRE LOADER
       );
 
       wp_nav_menu($args);
-
     ?>
   </header>

@@ -3,75 +3,82 @@
   <!-- =========================
               FOOTER
    ============================== -->
+  <?php if(!is_front_page()): ?>
+    <div class="container">
+        <footer class="footer-section footer-2 ">
+          <?php while(have_posts()): the_post(); ?>
+            <?php
+              global $post;
+              $slug = $post->post_name;
+            ?>
 
-    <footer class="footer-section footer-2 ">
-      <div class="row clientes" >
-        <div class="col-md-2">
-          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+            <?php  if ($slug != 'clientes'): ?>
+              <!-- seccion clientes -->
+              <div class="row" >
+                <div class="col-md-4">
+                  <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/cliente-21.png" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/wire-frame-final-21-4.png" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/cliente-21.png" alt="">
+                </div>
 
+              </div>
+            <?php endif; ?>
+          <?php endwhile; ?>
+
+          <!-- seccion contacto -->
+          <div class="row">
+            <div class="col-md-4 align-table height-contacto" style="background-color: #1A1A1A" >
+              <a href="#" class="align-table-cell">
+                <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/contacto-21.png" class="img-contacto">
+              </a>
+            </div>
+            <div class="col-md-4 align-table height-contacto" style="background-color: #333333; border: 1px solid black;">
+              <a href="#" class="align-table-cell">
+                <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/contacto-21.png" class="img-contacto">
+              </a>
+            </div>
+            <div class="col-md-4 align-table height-contacto" style="background-color: #1A1A1A; border: 1px solid black;">
+              <a href="#" class="align-table-cell">
+                <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/contacto-21.png" class="img-contacto">
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
 
+
+          <!-- seccion logo -->
+
+          <div class="row footer-content">
+            <div class="col-md-2 col-md-offset-5">
+              <a href="<?php echo get_site_url()?>">
+                <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" style?""/>
+              </a>
+            </div>
+            <div class="col-md-8 col-md-offset-3" >
+              <p style="color:#a7a6a4;">Copyright © <?php echo date('Y') ?> Porter Advertising, Todos los Derechos Reservados.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
 
+          <!-- SCROLL UP
+          <div class="scroll-up">
+            <a class="theme-color-bg" href="#home"><i class="fa fa-angle-up"></i></a>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+          -->
 
+
+          <!-- SCROLL UP
+          <div class="scroll-up">
+            <a class="theme-color-bg" href="#home"><i class="fa fa-angle-up"></i></a>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
+          -->
 
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div style="background-color: #ccc; border: 1px solid black; height:125px; width: 100%">
-
-          </div>
-        </div>
-
+        </footer>
       </div>
-      <div class="row">
-        <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
-          <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
-        </div>
-        <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
-          <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
-        </div>
-        <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
-          <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
-        </div>
-
-      </div>
-
-      <div class="row footer-content">
-        <div class="col-md-6 col-md-offset-3">
-          <a href="<?php echo get_site_url()?>">
-            <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" class="logo-footer" />
-          </a>
-        </div>
-        <div class="col-md-6 col-md-offset-3" >
-          <p style="color:#a7a6a4;">Copyright © <?php echo date('Y') ?> Porter Advertising, Todos los Derechos Reservados.</p>
-        </div>
-      </div>
-
-      <!-- SCROLL UP
-      <div class="scroll-up">
-        <a class="theme-color-bg" href="#home"><i class="fa fa-angle-up"></i></a>
-      </div>
-      -->
-
-    </footer>
-
-  <!-- /END FOOTER -->
-
+    <!-- /END FOOTER -->
+  <?php endif; ?>
   <!-- =========================
           SCRIPTS
      ============================== -->

@@ -4,54 +4,72 @@
   <div id="fullpage">
 
     <div class="container">
-      <div class="section active">
-        <p>Seccion 1</p>
-      </div>
-
-      <div class="section">
-        <div class="col-md-12">
-          <div style="background-color: #ccc; border: 1px solid black; height:400px; width: 100%">
-            <p>seccion de animacion</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-          <div class="row" >
-            <div class="col-md-4">
-              <div style="background-color: #ccc; border: 1px solid black; height:300px; width: 100%">
-
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="background-color: #ccc; border: 1px solid black; height:300px; width: 100%">
-
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div style="background-color: #ccc; border: 1px solid black; height:300px; width: 100%">
-
-              </div>
-            </div>
-
-          </div>
-        </footer>
+      <div class="section active col-md-12">
+        <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/wire-frame-final-21-3.png" class="img-responsive"  style="margin: 0 auto">
       </div>
 
       <div class="section">
         <div class="row">
-          <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
-            <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
+          <div class="col-md-10 col-md-offset-1">
+            <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/Captura-de-pantalla-2017-08-22-a-las-11.29.29-e1503412314331.png" class="img-responsive">
           </div>
-          <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
-            <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
-          </div>
-          <div class="col-md-4" style="background-color: #ccc; border: 1px solid black;">
-            <img src="https://placeholdit.co//i/292x292?&bg=ccc&fc=fff%22" class="img-contacto">
+          <?php
+            $args = array(
+              'parent' => 0,
+            );
+
+            $query = get_categories($args)
+          ?>
+          <div class="col-md-12">
+            <ul class="pf-filter">
+            <?php foreach ($query as $key): ?>
+
+              <a href="<?php echo $category_link = get_category_link( $key->cat_ID ) ?>">
+                <li class="btn-lines"> <?php echo $key->name ?> </li>
+              </a>
+            <?php endforeach; ?>
+          </ul>
           </div>
         </div>
       </div>
 
+      <!-- seccion clientes -->
+      <div class="section">
+        <div class="row" >
+          <div class="col-md-4">
+            <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/cliente-21.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/wire-frame-final-21-4.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/cliente-21.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- seccion contacto -->
+      <div class="section">
+        <div class="row">
+          <div class="col-md-4 align-table height-contacto" style="background-color: #1A1A1A" >
+            <a href="#" class="align-table-cell">
+              <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/contacto-21.png" class="img-contacto">
+            </a>
+          </div>
+          <div class="col-md-4 align-table height-contacto" style="background-color: #333333; border: 1px solid black;">
+            <a href="#" class="align-table-cell">
+              <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/contacto-21.png" class="img-contacto">
+            </a>
+          </div>
+          <div class="col-md-4 align-table height-contacto" style="background-color: #1A1A1A; border: 1px solid black;">
+            <a href="#" class="align-table-cell">
+              <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/contacto-21.png" class="img-contacto">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- seccion logo -->
       <div class="section">
         <div class="row footer-content">
           <div class="col-md-2 col-md-offset-5">
@@ -70,13 +88,11 @@
         </div>
         -->
       </div>
-
-
     </div>
-    <?php get_footer(); ?>
 
   </div>
 
+  <?php get_footer(); ?>
   <?php while(have_posts()): the_post(); ?>
     <p><?php //the_content() ?></p>
   <?php endwhile; ?>

@@ -2,6 +2,22 @@
 
 <?php get_header(); ?>
   <h1>sigle-portfolio.php</h1>
+  <section id="about" class="banner">
+      <div class="container">
+        <div class="clearfix"> </div>
+        <!-- <div class="cd-intro"> -->
+        <div class="cd-headline clip">
+          <!--<h1><?php the_title() ?></h1>-->
+          <span>Somos</span>
+          <span class="cd-words-wrapper">
+            <b class="is-visible">MKT</b>
+            <b>BTL</b>
+            <b>Digital</b>
+          </span>
+        </div>
+        <!-- </div> -->
+      </div>
+  </section>
   <?php while (have_posts()): the_post(); ?>
     <!-- banner-bottom -->
       <section id="portfolio-top" class="portfolio-project pad-top-60">
