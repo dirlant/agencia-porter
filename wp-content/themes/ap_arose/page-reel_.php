@@ -33,6 +33,11 @@
       <iframe class="embed-responsive-item" width="100%" height="100%" src="<?php echo str_replace('/watch?v=', '/embed/', get_field('enlace_reel')) ?>" allowfullscreen></iframe>
     </div>
   </div>
+
+
+
+
 <?php endwhile; wp_reset_postdata(); ?>
+
 
 <?php get_footer() ?>

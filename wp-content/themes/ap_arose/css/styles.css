@@ -1408,7 +1408,7 @@ header .only-logo .navbar .navbar-header {
   top: 5px;
 }
 .hamburger .icon {
-  width: 21px;
+  width: 22px;
   top: 11px;
   transform-origin: 50% 50%;
 }
@@ -3251,7 +3251,6 @@ header .only-logo .navbar .navbar-header {
     padding-bottom: 90px;
 }
 .testimonials-3 .feedback {
-    max-width: 750px;
     margin: 0 auto;
 }
 .testimonials-3 .feedback .image {
@@ -3285,7 +3284,7 @@ header .only-logo .navbar .navbar-header {
 }
 .testimonials-3 .owl-theme .owl-controls .owl-page span {
     border-radius: 20%;
-    max-height: 2px;
+    max-height: 15px;
 }
 .testimonials-3 .customNavigation a {
     -webkit-user-select: none;

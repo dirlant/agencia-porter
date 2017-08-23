@@ -101,7 +101,7 @@ PRE LOADER
 
     <?php $margin = (is_front_page()) ? '' : 'margin-top: -55px;'  ?>
     <a class="navbar-brand" href="<?php echo get_site_url()?>" >
-      <img src="http://localhost/wp-agencia-porter/wp-content/uploads/2017/08/logo-01.png" alt="logo" style="<?php echo $margin ?>"/>
+      <img src="<?php echo get_field('logo', 'option') ?>" alt="logo" style="<?php echo $margin ?>"/>
     </a>
     <div class="nav-trigger" role="button" title="sweet hamburger">
       <div class="hamburger">
