@@ -47,10 +47,7 @@ html, body, header, footer, .banner-bottom, .footer-section{
   position: relative;
   z-index: 9999;
 }
-@media (max-width: 768px) {
 
-
-}
 
 #top-nav{
   top: 0px;
@@ -244,6 +241,11 @@ html, body, header, footer, .banner-bottom, .footer-section{
   }
   .border-bottom{
     border-bottom: 0px solid #808080;
+  }
+}
+@media (max-width: 768px) {
+  .ih-item.circle .img img{
+    margin-left: -60% !important;
   }
 }
 

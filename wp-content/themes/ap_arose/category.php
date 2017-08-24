@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 <?php $category = get_queried_object(); ?>
 
-  <h1>category.php</h1>
-
   <section id="about" class="banner">
       <div class="container">
         <div class="clearfix"> </div>
@@ -23,7 +21,6 @@
     <div class="container">
         <div class="hey">
 
-            <div class="clearfix"> </div>
             <div class="hey-right">
                 <div class="hey-right-t"><?php echo $category->cat_name ?><span style="color: red">.</span></div>
                 <p><?php echo category_description($category->term_id) ?>
@@ -55,12 +52,14 @@
         <div class="grids-item item photo craft">
           <img class="grid-item-gut" src="<?php echo get_the_post_thumbnail_url() ?>" alt="portfolio" width="100%">
           <!-- Portfolio Hover -->
-          <div class="portfolio-hover">
-             <div class="action-btn">
-                <div class="port-title"> &nbsp; </div>
-                <a class="port-subt" href="<?php echo get_post_field( 'guid', get_post() ); ?>"><?php the_title() ?></a>
-             </div>
-          </div>
+          <a class="port-subt" href="<?php echo get_post_field( 'guid', get_post() ); ?>">
+            <div class="portfolio-hover">
+                <div class="action-btn">
+                  <div class="port-title"> &nbsp; </div>
+                  <?php the_title() ?>
+                </div>
+            </div>
+          </a>
           <!-- End Portfolio Hover -->
         </div>
       <?php endwhile; ?>

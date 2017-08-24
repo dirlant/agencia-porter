@@ -97,7 +97,7 @@ PRE LOADER
   HEADER
   ============================== -->
 
-  <header class="header">
+  <header id="header-menu" class="header">
 
     <?php $margin = (is_front_page()) ? '' : 'margin-top: -55px;'  ?>
     <a class="navbar-brand" href="<?php echo get_site_url()?>" >

@@ -4,14 +4,23 @@
   <div id="fullpage">
 
     <div class="container">
-      <div class="section active col-md-12">
-        <img src="<?php echo get_field('animacion', 'option') ?>" class="img-responsive"  style="margin: 0 auto">
+      <div id="animacion" class="section active col-md-12">
+        <?php
+          $pictures = get_field('animacion', 'option');
+          $count = count($pictures) - 1;
+          $i =  rand( 0 , $count);
+        ?>
+        <img id="img" src="<?php echo $pictures[$i]['gift'] ?>" class="img-responsive"  style="margin: 0 auto">
       </div>
 
       <div class="section">
         <div class="row" style="margin-top:80px;">
-          <div class="col-md-9 col-md-offset-2">
-            <img src="<?php echo get_field('banner', 'option') ?>" class="img-responsive">
+          <div class="col-md-10 col-md-offset-1">
+
+            <video id="banner"  width="850" height="400" autoplay >
+              <source src="<?php echo get_field('banner', 'option') ?>">
+              Your browser does not support the video tag.
+            </video>
           </div>
           <?php
             $args = array(
@@ -32,6 +41,11 @@
           </div>
         </div>
       </div>
+
+
+      <?php while(have_posts()): the_post(); ?>
+        <?php the_content() ?>
+      <?php endwhile; ?>
 
       <!-- seccion clientes -->
       <div class="section">
@@ -114,6 +128,8 @@
   </div>
 
   <?php get_footer(); ?>
-  <?php while(have_posts()): the_post(); ?>
-    <p><?php //the_content() ?></p>
-  <?php endwhile; ?>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('#header-menu').hide();
+    });
+  </script>
