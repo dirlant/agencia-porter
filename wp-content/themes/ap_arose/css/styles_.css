@@ -964,6 +964,10 @@ header .only-logo .navbar .navbar-header {
   background-color: #1b2943;
 }
 
+/* ----------------------------------------------------------
+------------ Hamburger and Navigation Styling Ends ----------
+------------------------------------------------------------*/
+
 
 
 /* ------------------------------------------------------
@@ -1016,7 +1020,7 @@ header .only-logo .navbar .navbar-header {
   font-weight: 500;
   background-color: transparent;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #666666;
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -1026,9 +1030,9 @@ header .only-logo .navbar .navbar-header {
   color:#FF3300;
 }
 
-/* #top-nav ul.dropdown-menu li a{
+#top-nav ul.dropdown-menu li a{
   color: #FFFFFF;
-} */
+}
 
 /**/
 
@@ -1274,6 +1278,9 @@ header .only-logo .navbar .navbar-header {
   padding: 20px 20px;
 }
 
+
+
+
 #nav-menu.is-active {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -1401,7 +1408,7 @@ header .only-logo .navbar .navbar-header {
   top: 5px;
 }
 .hamburger .icon {
-  width: 21px;
+  width: 22px;
   top: 11px;
   transform-origin: 50% 50%;
 }
@@ -3244,7 +3251,6 @@ header .only-logo .navbar .navbar-header {
     padding-bottom: 90px;
 }
 .testimonials-3 .feedback {
-    max-width: 750px;
     margin: 0 auto;
 }
 .testimonials-3 .feedback .image {
@@ -3278,7 +3284,7 @@ header .only-logo .navbar .navbar-header {
 }
 .testimonials-3 .owl-theme .owl-controls .owl-page span {
     border-radius: 20%;
-    max-height: 2px;
+    max-height: 15px;
 }
 .testimonials-3 .customNavigation a {
     -webkit-user-select: none;
@@ -5098,7 +5104,7 @@ GOOGLE MAP
   right: 1em;
 }
 .scroll-up a {
-  display: none;
+  display: block;
   width: 50px;
   height: 30px;
   text-align: center;
@@ -5527,31 +5533,4 @@ GOOGLE MAP
 }
 .pad-0{
   padding: 0px 0px;
-}
-
-
-
-/* Responsive Nav menu fix */
-
-.top-nav {
-  overflow: hidden;
-}
-
-.top-nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.top-nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.top-nav .icon {
-  display: none;
 }

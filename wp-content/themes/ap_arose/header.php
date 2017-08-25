@@ -99,9 +99,9 @@ PRE LOADER
 
   <header id="header-menu" class="header">
 
-    <?php $margin = (is_front_page()) ? '' : 'margin-top: -55px;'  ?>
-    <a class="navbar-brand" href="<?php echo get_site_url()?>" >
-      <img src="<?php echo get_field('logo', 'option') ?>" alt="logo" style="<?php echo $margin ?>"/>
+    <?php $class = (is_front_page()) ? '' : 'logo-top'  ?>
+    <a class="navbar-brand <?php echo $class ?>" href="<?php echo get_site_url()?>" >
+      <img src="<?php echo get_field('logo', 'option') ?>" alt="logo"/>
     </a>
     <div class="nav-trigger" role="button" title="sweet hamburger">
       <div class="hamburger">

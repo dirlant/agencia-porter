@@ -10,14 +10,14 @@
           $count = count($pictures) - 1;
           $i =  rand( 0 , $count);
         ?>
-        <img id="img" src="<?php echo $pictures[$i]['gift'] ?>" class="img-responsive"  style="margin: 0 auto">
+        <img id="img" src="<?php echo $pictures[$i]['gift'] ?>" class="img-responsive">
       </div>
 
       <div class="section">
         <div class="row" style="margin-top:80px;">
           <div class="col-md-10 col-md-offset-1">
 
-            <video id="banner"  width="850" height="400" autoplay >
+            <video id="banner"  class="banner-size" autoplay >
               <source src="<?php echo get_field('banner', 'option') ?>">
               Your browser does not support the video tag.
             </video>
@@ -106,7 +106,7 @@
 
       <!-- seccion logo -->
       <div class="section">
-        <div class="row footer-content" style="margin-top: -100px;">
+        <div class="row footer-content logo-footer">
           <div class="col-md-2 col-md-offset-5">
             <a href="<?php echo get_site_url()?>">
               <img src="<?php echo get_field('logo', 'option') ?>"/>

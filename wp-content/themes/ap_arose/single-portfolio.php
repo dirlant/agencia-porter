@@ -1,7 +1,7 @@
 
 
 <?php get_header(); ?>
-  <h1>sigle-portfolio.php</h1>
+
   <section id="about" class="banner">
       <div class="container">
         <div class="clearfix"> </div>
@@ -38,13 +38,10 @@
                   </ol>
 
                   <!-- Wrapper for slides -->
-                  <div class="carousel-inner trabajos-interno" role="listbox">
+                  <div class="carousel-inner" role="listbox">
                     <?php for ($i=0; $i < count($sliders); $i++): ?>
                       <div class="item">
                         <img src="<?php echo $sliders[$i]['url']?>" alt="<?php echo $sliders[$i]['title']?>">
-                        <div class="carousel-caption">
-                          ...
-                        </div>
                       </div>
                     <?php endfor; ?>
                   </div>
@@ -68,7 +65,7 @@
                           <div class="clearfix"> </div>
                           <div class="hey-right">
                               <div class="hey-right-t"><?php the_title() ?></div>
-                              <p><?php the_content() ?>
+                              <?php the_content() ?>
 
                           </div>
                       </div>
